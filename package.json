@@ -1,0 +1,28 @@
+{
+  "name": "tf2-dynamic-schema",
+  "version": "0.0.2",
+  "description": "Dynamic schema for tf2-item-format.",
+  "main": "dist/index.js",
+  "scripts": {
+    "build": "tsc"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/viggojonasson/tf2-dynamic-schema.git"
+  },
+  "keywords": [],
+  "author": "Viggo Jonasson",
+  "license": "MIT",
+  "bugs": {
+    "url": "https://github.com/viggojonasson/tf2-dynamic-schema/issues"
+  },
+  "homepage": "https://github.com/viggojonasson/tf2-dynamic-schema#readme",
+  "devDependencies": {
+    "typescript": "^4.7.4"
+  },
+  "dependencies": {
+    "axios": "^0.27.2",
+    "tf2-item-format": "^5.8.2",
+    "vdf": "^0.0.2"
+  }
+}
