@@ -17,7 +17,8 @@ export async function createFormat(
     const schema = await fetchAll(apiKey);
 
     return {
-        format: createItemFormat(schema as unknown as ISchema),
+        // @ts-ignore
+        format: createItemFormat(new Schema(schema)),
         schema,
     };
 }
