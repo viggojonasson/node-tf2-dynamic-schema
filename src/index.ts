@@ -29,3 +29,5 @@ export async function fetchSchema(apiKey: string): Promise<Format> {
     // @ts-ignore
     return createItemFormat(new Schema(schema));
 }
+
+export { Schema };
