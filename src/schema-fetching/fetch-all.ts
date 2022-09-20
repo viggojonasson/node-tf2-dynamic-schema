@@ -3,7 +3,23 @@ import { getPaintKits } from './paint-kits';
 import { getSchemaItems } from './schema-items';
 import { getSchemaOverview } from './schema-overview';
 
-export async function fetchAll(apiKey) {
+// TODO: Don't use any
+export type SchemaFetch = {
+    itemsGame: any;
+    paintKits: {};
+    qualities: {};
+    effects: {};
+    origins: {};
+    attributes: {};
+    sets: {};
+    levels: {};
+    parts: {};
+    lookups: {};
+    itemNames: any;
+    items: any;
+};
+
+export async function fetchAll(apiKey): Promise<SchemaFetch> {
     const [itemsGame, paintKits, schemaItems, overview] = await Promise.all([
         getItemsGame(),
         getPaintKits(),
