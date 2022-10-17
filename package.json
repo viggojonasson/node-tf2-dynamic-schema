@@ -1,6 +1,6 @@
 {
     "name": "tf2-dynamic-schema",
-    "version": "0.1.9",
+    "version": "0.1.10",
     "description": "Dynamic schema for tf2-item-format.",
     "main": "dist/index.js",
     "types": "dist/index.d.ts",
