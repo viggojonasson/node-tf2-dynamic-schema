@@ -6,7 +6,7 @@ import { getSchemaOverview } from './schema-overview';
 // TODO: Don't use any
 export type SchemaFetch = {
     itemsGame: any;
-    paintKits: {};
+    textures: {};
     qualities: {};
     effects: {};
     origins: {};
@@ -20,7 +20,7 @@ export type SchemaFetch = {
 };
 
 export async function fetchAll(apiKey): Promise<SchemaFetch> {
-    const [itemsGame, paintKits, schemaItems, overview] = await Promise.all([
+    const [itemsGame, textures, schemaItems, overview] = await Promise.all([
         getItemsGame(),
         getPaintKits(),
         getSchemaItems(apiKey),
@@ -32,7 +32,7 @@ export async function fetchAll(apiKey): Promise<SchemaFetch> {
      */
     return {
         itemsGame,
-        paintKits,
+        textures,
 
         qualities: overview.qualities,
         effects: overview.effects,
