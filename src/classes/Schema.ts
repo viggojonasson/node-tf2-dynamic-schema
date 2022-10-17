@@ -53,7 +53,17 @@ type SchemaObject = {
 export class Schema implements ISchema {
     public effects!: SchemaEnum;
     public wears!: SchemaEnum;
-    public killstreaks!: SchemaEnum;
+    public killstreaks: {
+        None: 0;
+        Killstreak: 1;
+        'Specialized Killstreak': 2;
+        'Professional Killstreak': 3;
+
+        '0': 'None';
+        '1': 'Killstreak';
+        '2': 'Specialized Killstreak';
+        '3': 'Professional Killstreak';
+    };
     public textures!: SchemaEnum;
     public itemNames!: DefindexToName;
     public items!: SchemaEnum[];
